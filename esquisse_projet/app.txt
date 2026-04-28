@@ -1,0 +1,11 @@
+Fichier: app.py
+
+Rôle:
+- Point d'entrée CLI pour l'esquisse de projet "Gestion Étudiants".
+
+Fonctions importantes:
+- `main()` : bouclage du menu interactif et appel des fonctions des modules.
+
+Notes pédagogiques:
+- Le fichier montre comment orchestrer les modules `students`, `storage`
+  et `utils` ; il est volontairement minimal pour faciliter la lecture.

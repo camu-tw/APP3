@@ -1,0 +1,16 @@
+Fichier: students.py
+
+Rôle:
+- Modèle et opérations CRUD pour la gestion d'étudiants (création, lecture,
+  mise à jour, suppression).
+
+Fonctions (résumé):
+- `_new_id()` : génère un id unique court.
+- `create_student()` : demande prénom/nom/note et retourne un dict.
+- `list_students(students)` : affiche les étudiants.
+- `find_student(students, sid)` : retourne un étudiant ou None.
+- `update_student(students, sid)` : met à jour les champs interactifs.
+- `delete_student(students, sid)` : supprime un étudiant par id.
+
+Format des données:
+- Les étudiants sont des dictionnaires: `{"id","first_name","last_name","grade"}`

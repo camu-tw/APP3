@@ -1,0 +1,12 @@
+Fichier: storage.py
+
+Rôle:
+- Gestion basique de la persistance JSON dans `data/students.json`.
+
+Fonctions:
+- `_ensure_data_file()` : crée le dossier `data` et le fichier JSON si absent.
+- `load_students()` : charge et retourne la liste d'étudiants.
+- `save_students(students)` : sauvegarde la liste en JSON.
+
+Notes:
+- Utilisé pour garder l'exemple simple et visible dans un projet scolaire.

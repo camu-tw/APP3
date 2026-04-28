@@ -1,0 +1,8 @@
+Fichier: utils.py
+
+Rôle:
+- Petites fonctions utilitaires pour l'esquisse.
+
+Fonctions:
+- `export_csv(students, path)` : écrit un CSV avec les colonnes id, first_name,
+  last_name, grade.

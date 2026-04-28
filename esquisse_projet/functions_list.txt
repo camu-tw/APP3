@@ -1,0 +1,24 @@
+Liste des fonctions et rôles (utile pour répartir le travail entre collaborateurs)
+
+students.py
+- _new_id() -> str : génère un id court (utilitaire interne)
+- create_student() -> dict : interaction CLI pour créer un étudiant
+- list_students(students) -> None : affiche la liste
+- find_student(students, sid) -> dict|None : recherche par id
+- update_student(students, sid) -> bool : met à jour un étudiant
+- delete_student(students, sid) -> bool : supprime un étudiant
+
+storage.py
+- load_students() -> list : charge la liste depuis data/students.json
+- save_students(students) -> None : sauvegarde la liste
+
+utils.py
+- export_csv(students, path) -> None : export CSV simple
+
+app.py
+- main() -> None : boucle de menu et orchestration générale
+
+Conseil pour répartition :
+- Backend / logique : `students.py`, `storage.py`
+- IHM / CLI : `app.py`
+- Export / utilitaires : `utils.py`
