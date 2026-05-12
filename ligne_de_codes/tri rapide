@@ -1,0 +1,14 @@
+def tri_rapide(L):
+    """Tri rapide d'une liste en récursif"""
+    if len(L) < 2:
+        return L
+    e = L[0]
+    L1, L2 = [], []
+    for x in L[1:]:
+        if x < e:
+            L1.append(x)
+        else:
+            L2.append(x)
+    return tri_rapide(L1) + [e] + tri_rapide(L2)
+L=[3,4,6,2,5,1,8,7]
+print(tri_rapide(L))
